@@ -22,11 +22,12 @@ html {
 body {
   background-color: #4F5D75;
   color: #fff;
+  font-family: 'Quicksand', sans-serif;
 }
 
-ul {
+/* ul {
 
-}
+} */
 
 li {
   list-style: none;
