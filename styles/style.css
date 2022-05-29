@@ -20,7 +20,7 @@ html {
 }
 
 body {
-  background-color: #4F5D75;
+  background-color: #0D1317;
   color: #fff;
   font-family: 'Quicksand', sans-serif;
 }
@@ -45,10 +45,24 @@ a {
   padding: 0 2rem;
 }
 
+/* BACKGROUND_COVER */
+.background-cover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background-image: url(../assets/topography.svg);
+}
+
+
 /* HEADER */
 .main-header {
-  background-color: #2D3142;
+  /* background-color: #2D3142; */
   padding: 1.5rem;
+  position: absolute;
+  width: 100%;
 }
 
 .top-nav {
@@ -72,7 +86,7 @@ a {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  margin-right: 1rem;
+  margin-right: 0.5rem;
   transform: rotate(-40deg)
 }
 
@@ -90,4 +104,22 @@ a {
 .page-links li a {
   display: block;
   cursor: pointer;
+}
+
+/* HERO */
+.main-hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-hero-title {
+  font-size: 3.8rem;
+  padding: 2rem 0;
+}
+
+.main-hero-positions li {
+  font-size: 1.8rem;
+  margin: 1rem 0;
 }
