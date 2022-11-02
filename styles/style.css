@@ -1,7 +1,7 @@
 /* 
 Pallet
 2D3142 - text-dark
-BFC0C0
+#BFC0C0
 FFFFFF - text-light
 EF8354 - Highlight
 4F5D75 - Background
@@ -23,6 +23,7 @@ body {
   background-color: #0D1317;
   color: #fff;
   font-family: 'Quicksand', sans-serif;
+  background-image: url(../assets/topography.svg);
 }
 
 /* ul {
@@ -38,6 +39,9 @@ a {
   color: #fff;
 }
 
+i {
+}
+
 /* REUSABLE STYLES */
 .container {
   max-width: 640px;
@@ -45,30 +49,22 @@ a {
   padding: 0 2rem;
 }
 
-/* BACKGROUND_COVER */
-.background-cover {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: -1;
-  background-image: url(../assets/topography.svg);
-}
-
-
-/* HEADER */
+/****************** 
+HEADER
+******************/
 .main-header {
   /* background-color: #2D3142; */
   padding: 1.5rem;
-  position: absolute;
   width: 100%;
+  position: absolute;
 }
 
+
+/* NAV */
 .top-nav {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
   padding: 1.5rem 0;
 }
 
@@ -95,6 +91,31 @@ a {
   font-weight: bolder;
 }
 
+.hamburger-menu {
+  height: 42px;
+  width: 42px;
+  border: 1px solid rgba(211,211,211, 0.6);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.hamburger-menu-line {
+  height: 4px;
+  width: 100%;
+  background-color: rgba(211,211,211, 0.6);
+  border-radius: 10px;
+
+}
+
+
+.page-links {
+  display: none; /* TEMP */
+}
+
 .page-links li {
   display: inline-block;
   margin-left: 1rem;
@@ -106,12 +127,22 @@ a {
   cursor: pointer;
 }
 
-/* HERO */
+/****************** 
+HERO
+******************/
 .main-hero {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.main-hero .container {
+  text-align: center;
+}
+
+.main-hero-photo {
+  height: 30rem;
 }
 
 .main-hero-title {
@@ -122,3 +153,6 @@ a {
 .main-hero-desc {
   
 }
+
+/* TODO Media Queries, XS, SM, MD, LG */
+/* Add Photo */
