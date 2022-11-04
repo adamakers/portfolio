@@ -41,6 +41,7 @@ a {
 
 i {
   font-family: "Font Awesome 5 Pro";
+  /* font-style: normal; */
 }
 
 /* REUSABLE STYLES */
@@ -109,7 +110,6 @@ HEADER
   width: 100%;
   background-color: rgba(211,211,211, 0.6);
   border-radius: 10px;
-
 }
 
 
@@ -136,6 +136,7 @@ HERO
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .main-hero .container {
@@ -147,13 +148,45 @@ HERO
 }
 
 .main-hero-title {
-  font-size: 3.8rem;
+  font-size: 6rem;
   padding: 2rem 0;
 }
 
 .main-hero-desc {
-  
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
 }
 
-/* TODO Media Queries, XS, SM, MD, LG */
+.main-hero-links {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-hero-links li {
+  display: inline-block;
+}
+
+.main-hero-links li a {
+  padding: 1.5rem;
+  display: block;
+}
+
+.main-hero-next-button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 3rem;
+  font-style: normal;
+}
+
+.main-hero-next-button a {
+  display: block;
+  padding: 0.5rem 1rem;
+}
+
+/* TODO */
+/* Media Queries, XS, SM, MD, LG */
 /* Add Photo */
+/* animation for next page arrow */
