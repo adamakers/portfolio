@@ -61,7 +61,6 @@ HEADER
   position: absolute;
 }
 
-
 /* NAV */
 .top-nav {
   display: flex;
@@ -73,24 +72,6 @@ HEADER
 .logo {
   font-size: 2rem;
   margin-bottom: 1.5rem;
-}
-
-.logo-compass{
-  display: inline-block;
-  border: 1px solid #fff;
-  height: 4rem;
-  width: 4rem;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  margin-right: 0.5rem;
-  transform: rotate(-40deg)
-}
-
-.logo-north-bracket {
-  color: #EF8354;
-  font-weight: bolder;
 }
 
 .hamburger-menu {
@@ -111,7 +92,6 @@ HEADER
   background-color: rgba(211,211,211, 0.6);
   border-radius: 10px;
 }
-
 
 .page-links {
   display: none; /* TEMP */
@@ -136,7 +116,7 @@ HERO
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  /* position: relative; */
 }
 
 .main-hero .container {
@@ -144,11 +124,11 @@ HERO
 }
 
 .main-hero-photo {
-  height: 30rem;
+  height: 18rem;
 }
 
 .main-hero-title {
-  font-size: 6rem;
+  font-size: 5rem;
   padding: 2rem 0;
 }
 
@@ -170,6 +150,7 @@ HERO
 .main-hero-links li a {
   padding: 1.5rem;
   display: block;
+  font-size: 3.4rem;
 }
 
 .main-hero-next-button {
@@ -185,6 +166,34 @@ HERO
   display: block;
   padding: 0.5rem 1rem;
 }
+
+/* FOOTER */
+
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 2rem;
+  text-align: center;
+}
+
+footer p {
+  font-size: 1.6rem;
+}
+
+
+/*******************************/
+/* MEDIA QUERIES */
+/*******************************/
+
+@media (min-width: 375px) {
+  .logo-compass {
+    /* display: inline-block; */
+  }
+}
+
+
+
 
 /* TODO */
 /* Media Queries, XS, SM, MD, LG */
