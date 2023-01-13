@@ -24,6 +24,7 @@ body {
   color: #fff;
   font-family: 'Quicksand', sans-serif;
   background-image: url(../assets/topography.svg);
+  position: relative;
 }
 
 /* ul {
@@ -58,20 +59,21 @@ HEADER
   /* background-color: #2D3142; */
   padding: 1.5rem;
   width: 100%;
-  position: absolute;
+  /* position: absolute; */
 }
 
 /* NAV */
 .top-nav {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   padding: 1.5rem 0;
 }
 
 .logo {
   font-size: 2rem;
-  margin-bottom: 1.5rem;
 }
 
 .hamburger-menu {
@@ -94,11 +96,18 @@ HEADER
 }
 
 .page-links {
-  display: none; /* TEMP */
+  position: absolute;
+  top: 102px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  background-color: #0D1317;
+  text-align: center;
+  display: none;
 }
 
 .page-links li {
-  display: inline-block;
   margin-left: 1rem;
   font-size: 1.5rem;
 }
@@ -106,13 +115,14 @@ HEADER
 .page-links li a {
   display: block;
   cursor: pointer;
+  padding: 2rem 1rem;
 }
 
 /****************** 
 HERO
 ******************/
 .main-hero {
-  height: 100vh;
+  height: calc(100vh - 102px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -129,7 +139,7 @@ HERO
 
 .main-hero-title {
   font-size: 5rem;
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 
 .main-hero-desc {
@@ -173,7 +183,7 @@ footer {
   position: absolute;
   width: 100%;
   bottom: 0;
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
 }
 
@@ -188,7 +198,6 @@ footer p {
 
 @media (min-width: 375px) {
   .logo-compass {
-    /* display: inline-block; */
   }
 }
 
