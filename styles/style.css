@@ -22,7 +22,7 @@ html {
 body {
   background-color: #0D1317;
   color: #fff;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Outfit', sans-serif;
   background-image: url(../assets/topography.svg);
   position: relative;
 }
@@ -52,6 +52,10 @@ i {
   padding: 0 2rem;
 }
 
+.lin-transition {
+  transition: all 0.07s linear;
+}
+
 /****************** 
 HEADER
 ******************/
@@ -73,7 +77,7 @@ HEADER
 }
 
 .logo {
-  font-size: 2rem;
+  font-size: 2.6rem;
 }
 
 .hamburger-menu {
@@ -122,6 +126,10 @@ HEADER
   padding: 2rem 1rem;
 }
 
+.page-links li a:hover {
+  color:#EF8354;
+}
+
 /****************** 
 HERO
 ******************/
@@ -146,9 +154,30 @@ HERO
   padding: 1rem 0;
 }
 
-.main-hero-desc {
+.main-hero-roles {
   margin-bottom: 2rem;
   font-size: 2.2rem;
+  position: relative;
+}
+
+.main-hero-roles li {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.main-hero-roles li::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 30%;
+  margin: 0 auto;
+  background-color: #EF8354;
+  margin-top: 0.5rem;
+}
+
+.main-hero-roles li:last-child {
+  margin-right: 0;
+
 }
 
 .main-hero-links {
@@ -165,6 +194,10 @@ HERO
   padding: 1.5rem;
   display: block;
   font-size: 3.4rem;
+}
+
+.main-hero-links li a:hover {
+  transform: scale(1.2);
 }
 
 .main-hero-next-button {
